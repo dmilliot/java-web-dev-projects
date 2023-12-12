@@ -1,22 +1,16 @@
 package org.launchcode;
 
 public class MenuItems {
-    private String name;
     private String description;
     private Double price;
     private String category;
 
-    public MenuItems(String name, String description, Double price, String category) {
-        this.name = name;
+    public MenuItems(String description, Double price, String category) {
         this.description = description;
         this.price = price;
         this.category = category;
     }
 
-
-    public String getName() {
-        return name;
-    }
 
     public String getDescription() {
         return description;
