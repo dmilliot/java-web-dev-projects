@@ -84,4 +84,9 @@ public class Car {
         this.odometer += milesAbleToTravel;
     }
 
+    @Override
+    public String toString() {
+        return String.format("My %s %s gets %s miles per gallon.", this.getMake(), this.getModel(), this.getMilesPerGallon())
+    }
+}
 }
