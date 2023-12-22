@@ -2,16 +2,18 @@ package QuizStudio;
 
 import java.util.Scanner;
 import java.util.List;
+import java.util.Arrays;
+import java.util.ArrayList;
 
 public abstract class Question {
     private String questionName;
     private String question;
     private List<String> potentialAnswers;
 
-    public Question(String questionName, String question, String[] potentialAnswers) {
+    public Question(String questionName, String question, List<String> potentialAnswers) {
         this.questionName = questionName;
         this.question = question;
-        this.potentialAnswers = List.of(potentialAnswers);
+        this.potentialAnswers = potentialAnswers;
     }
 
     public abstract void askQuestion();

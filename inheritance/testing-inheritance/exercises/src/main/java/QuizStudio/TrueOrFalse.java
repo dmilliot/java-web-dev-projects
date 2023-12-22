@@ -2,17 +2,20 @@ package QuizStudio;
 
 import java.util.List;
 import java.util.Scanner;
+import java.util.ArrayList;
+import java.util.Arrays;
+
 
 public class TrueOrFalse extends Question{
-
     private String correctAnswer;
     private String answer;
 
-    public TrueOrFalse(String questionName, String question, String correctAnswer, String answer, String... potentialAnswers) {
+    public TrueOrFalse(String questionName, String question, String correctAnswer, String answer, List<String> potentialAnswers) {
         super(questionName, question, potentialAnswers);
         this.correctAnswer = correctAnswer;
         this.answer = answer;
     }
+
 
     public String getCorrectAnswer() {
         return correctAnswer;
