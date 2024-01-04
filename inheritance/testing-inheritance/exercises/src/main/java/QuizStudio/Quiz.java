@@ -13,5 +13,5 @@ public class Quiz {
         int score = new int;
         return score;
     }
-    
+
 }
