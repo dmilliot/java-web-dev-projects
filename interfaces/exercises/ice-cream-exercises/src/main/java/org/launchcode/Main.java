@@ -9,9 +9,13 @@ public class Main {
         ArrayList<Flavor> flavors = menu.getFlavors();
         ArrayList<Cone> cones = menu.getCones();
 
+//        System.out.println(flavors);
+
         flavors.sort(new FlavorComparator());
 
+        cones.sort(new ConeComparator());
 
+        System.out.println(cones);
 
 
 
